@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mindful Market Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Mindful Market Options</h1>
+  <div id="options-container">
+    <h2>Floating Popup Settings</h2>
+    <div class="setting-item">
+      <label for="enablePopup">Enable Floating Popup:</label>
+      <input type="checkbox" id="enablePopup">
+    </div>
+
+    <div class="setting-item">
+      <label>Popup Position:</label>
+      <select id="popupPosition">
+        <option value="bottom-right">Bottom-Right</option>
+        <option value="bottom-left">Bottom-Left</option>
+        <option value="top-right">Top-Right</option>
+        <option value="top-left">Top-Left</option>
+      </select>
+    </div>
+
+    <h2>Nudge Thresholds (in minutes)</h2>
+    <div class="setting-item">
+      <label for="nudgeThreshold1">First Nudge (e.g., 15 min):</label>
+      <input type="number" id="nudgeThreshold1" value="15" min="1">
+    </div>
+    <div class="setting-item">
+      <label for="nudgeThreshold2">Second Nudge (e.g., 30 min):</label>
+      <input type="number" id="nudgeThreshold2" value="30" min="1">
+    </div>
+
+    <h2>Custom Mindful Quotes</h2>
+    <div class="setting-item">
+      <label for="customQuotes">Enter quotes (one per line):</label>
+      <textarea id="customQuotes" rows="5" placeholder="What are you really looking for today?"></textarea>
+    </div>
+
+    <button id="saveOptions">Save Settings</button>
+    <hr>
+    <p>For now, you can reset your shopping statistics:</p>
+    <button id="resetStatsOptions">Reset All Statistics</button>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

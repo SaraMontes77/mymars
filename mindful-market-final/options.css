@@ -1,0 +1,39 @@
+/* mindful-market-extension/options.css */
+
+body {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-top: 0;
+}
+
+#options-container p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  background-color: #dc3545; /* Red for reset */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+button:hover {
+  background-color: #c82333;
+}
